@@ -1,0 +1,71 @@
+
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #102a36;
+
+  --primary: #155e75;
+  --primary-dark: #102a36;
+  --primary-hover: #164e63;
+  --accent: #22d3ee;
+  --primary-light: #ecfeff;
+
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --surface: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent: var(--accent);
+  --color-primary-light: var(--primary-light);
+
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+
+  --font-sans: var(--font-geist-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: #155e75;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #155e75;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

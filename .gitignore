@@ -1,0 +1,68 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Build files
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Database backups
+database-backups/
+*.sql
+*.sql.gz
+*.dump
+
+# Uploaded customer files
+uploads/
+
+# Source code backups
+api-backup.txt
+*-backup.txt
+*.bak
+*.backup
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Cache
+.cache/
+.turbo/
+.eslintcache
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Deployment
+.vercel/
+
+# Compressed files
+*.zip
+*.rar
+*.7z
